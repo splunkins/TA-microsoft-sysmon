@@ -11,6 +11,12 @@
 
 # Update History
 
+## 8.2.0
+* February 11, 2018
+* Tested with Sysmon version 8.0
+* https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon
+* Updates to work with the new Splunk_TA_windows - https://docs.splunk.com/Documentation/WindowsAddOn/5.0.1/User/Upgrade#Upgrade_from_version_4.8.4_to_version_5.0.1
+
 ## 8.1.0
 * December 11, 2018
 * Tested with Sysmon version 8.0
