@@ -11,7 +11,7 @@
 
 # Update History
 
-## 8.1.1
+## 10.0.0
 * June 13, 2019
 * Tested with Sysmon version 10
 * https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon
