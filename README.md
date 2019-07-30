@@ -11,6 +11,13 @@
 
 # Update History
 
+## 10.0.0
+* June 13, 2019
+* Tested with Sysmon version 10
+* https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon
+* Added support for Sysmon v10 having new DNS Query event type.
+* Provided inputs.conf examples enabling blacklist of multiple DNS Query events based on complex rule groups
+
 ## 8.1.0
 * December 11, 2018
 * Tested with Sysmon version 8.0
@@ -115,6 +122,9 @@ Sysmon ProcessCreate events may pick up passwords in CommandLine and ParentComma
 ```
 SEDCMD-pwd_rule1 = s/ -pw ([^\s\<])+/ -pw ***MASK***/g
 ```
+
+The Sysmon v10 configuration XML spec does not allow for mutiple log-write exclusions based on rule groups.  It is possible to achieve complex log forwarding exclusions for high volume DNS Query Events with inputs.conf blacklist specs. See comments in inputs.conf for 
+implementation examples.   
 
 For additional info on Sysmon see: http://blogs.splunk.com/2014/11/24/monitoring-network-traffic-with-sysmon-and-splunk/
 
