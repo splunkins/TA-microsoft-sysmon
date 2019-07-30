@@ -10,13 +10,19 @@
 * Has index-time ops: false
 
 # Update History
-
-## 8.2.0
-* February 11, 2018
-* Tested with Sysmon version 8.0
+## 10.1.0
+* July 30, 2019
+* Tested with Sysmon version 10
 * https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon
 * Updates to work with the new Splunk_TA_windows v5 and onwards - https://docs.splunk.com/Documentation/WindowsAddOn/5.0.1/User/Upgrade#Upgrade_from_version_4.8.4_to_version_5.0.1
 * All searches,reports and dashboards using sourcetype="XmlWinEventLog:Microsoft-Windows-Sysmon/Operational" need to use source="XmlWinEventLog:Microsoft-Windows-Sysmon/Operational" instead, due to the upgrade to Splunk_TA_windows v5 
+
+## 10.0.0
+* June 13, 2019
+* Tested with Sysmon version 10
+* https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon
+* Added support for Sysmon v10 having new DNS Query event type.
+* Provided inputs.conf examples enabling blacklist of multiple DNS Query events based on complex rule groups
 
 ## 8.1.0
 * December 11, 2018
@@ -122,6 +128,9 @@ Sysmon ProcessCreate events may pick up passwords in CommandLine and ParentComma
 ```
 SEDCMD-pwd_rule1 = s/ -pw ([^\s\<])+/ -pw ***MASK***/g
 ```
+
+The Sysmon v10 configuration XML spec does not allow for mutiple log-write exclusions based on rule groups.  It is possible to achieve complex log forwarding exclusions for high volume DNS Query Events with inputs.conf blacklist specs. See comments in inputs.conf for 
+implementation examples.   
 
 For additional info on Sysmon see: http://blogs.splunk.com/2014/11/24/monitoring-network-traffic-with-sysmon-and-splunk/
 
