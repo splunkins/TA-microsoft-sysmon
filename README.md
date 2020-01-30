@@ -6,10 +6,16 @@
   * https://github.com/dstaulcu
   * https://github.com/MikeKemmerer
   * https://github.com/trogdorsey
-* Sourcetype: XmlWinEventLog:Microsoft-Windows-Sysmon/Operational
+* Source: XmlWinEventLog:Microsoft-Windows-Sysmon/Operational
 * Has index-time ops: false
 
 # Update History
+## 10.1.0
+* July 30, 2019
+* Tested with Sysmon version 10
+* https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon
+* Updates to work with the new Splunk_TA_windows v5 and onwards - https://docs.splunk.com/Documentation/WindowsAddOn/5.0.1/User/Upgrade#Upgrade_from_version_4.8.4_to_version_5.0.1
+* All searches,reports and dashboards using sourcetype="XmlWinEventLog:Microsoft-Windows-Sysmon/Operational" need to use source="XmlWinEventLog:Microsoft-Windows-Sysmon/Operational" instead, due to the upgrade to Splunk_TA_windows v5 
 
 ## 10.0.0
 * June 13, 2019
