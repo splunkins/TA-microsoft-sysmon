@@ -11,7 +11,7 @@
 
 # Update History
 
-## 10.1.1
+## 10.2.0
 * February 9, 2020
 * Tested with Sysmon version 10
 * https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon
