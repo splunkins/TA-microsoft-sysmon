@@ -10,6 +10,15 @@
 * Has index-time ops: false
 
 # Update History
+
+## 10.1.1
+* Tested with Sysmon version 10
+* https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon
+* Added Event Type [ms-sysmon-dns], to capture EventCode=22 Sysmon events as DNS events.
+* Added network/resolution/dns tags for event type [ms-sysmon-dns].
+* Added FIELDALIAS for query/reply_code_id for CIM compatibility.
+* Added transform entry [extract_dns_record_data] to extract record info for DNS responses like CNAME.  Added transform entry [extract_dns_ip_data] to properly extract IP addresses from DNS responses.
+
 ## 10.1.0
 * July 30, 2019
 * Tested with Sysmon version 10
