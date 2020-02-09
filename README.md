@@ -12,6 +12,7 @@
 # Update History
 
 ## 10.1.1
+* February 9, 2020
 * Tested with Sysmon version 10
 * https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon
 * Added Event Type [ms-sysmon-dns], to capture EventCode=22 Sysmon events as DNS events.
