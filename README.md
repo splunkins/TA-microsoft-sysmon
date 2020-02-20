@@ -1,7 +1,7 @@
 # TA-Microsoft-Sysmon
        
 * Original Author: Adrian Hall
-* Current maintainers: Jim Apger, Dave Herrald, James Brodsky 
+* Current maintainers: Dave Herrald, James Brodsky 
 * Contributors:
   * https://github.com/dstaulcu
   * https://github.com/MikeKemmerer
@@ -10,6 +10,12 @@
 * Has index-time ops: false
 
 # Update History
+
+## 10.3.0
+* February 20, 2020
+* Tested with Sysmon version 10
+* https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon
+* Fixed DNS eventtype to use source rather than sourcetype
 
 ## 10.2.0
 * February 9, 2020
