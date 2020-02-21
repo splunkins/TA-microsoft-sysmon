@@ -2,10 +2,7 @@
        
 * Original Author: Adrian Hall
 * Current maintainers: Dave Herrald, James Brodsky 
-* Contributors:
-  * https://github.com/dstaulcu
-  * https://github.com/MikeKemmerer
-  * https://github.com/trogdorsey
+* Contributors: https://github.com/splunk/TA-microsoft-sysmon/graphs/contributors
 * Source: XmlWinEventLog:Microsoft-Windows-Sysmon/Operational
 * Has index-time ops: false
 
