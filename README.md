@@ -8,6 +8,12 @@
 
 # Update History
 
+## 10.4.0
+* March 2, 2020
+* Tested with Sysmon version 10
+* https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon
+* Updated props.conf
+
 ## 10.3.0
 * February 20, 2020
 * Tested with Sysmon version 10
