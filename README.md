@@ -1,12 +1,16 @@
 # TA-Microsoft-Sysmon
        
 * Original Author: Adrian Hall
-* Current maintainers: Dave Herrald, James Brodsky 
+* Current maintainers: Splunkworks
 * Contributors: https://github.com/splunk/TA-microsoft-sysmon/graphs/contributors
 * Source: XmlWinEventLog:Microsoft-Windows-Sysmon/Operational
 * Has index-time ops: false
 
 # Update History
+
+## 10.6.0
+* March 6, 2020
+* https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon
 
 ## 10.5.0
 * March 3, 2020
