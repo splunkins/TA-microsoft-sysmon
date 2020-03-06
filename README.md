@@ -8,6 +8,11 @@
 
 # Update History
 
+## 10.5.0
+* March 3, 2020
+* https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon
+* Reverted change to source (XmlWinEventLog...), added source specification in inputs.conf to remeove dependancy on Splunk_TA_windows
+
 ## 10.4.0
 * March 2, 2020
 * Tested with Sysmon version 10
